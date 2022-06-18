@@ -1,0 +1,18 @@
+
+#container1{
+    background-color: salmon;
+    border: 10px solid papayawhip;
+    border-radius: 10px;
+    height: 650px;
+    padding-top: 50px;
+    padding-left: 50px; 
+}
+
+#container2{
+    background-color: salmon;
+    border: 10px solid papayawhip;
+    border-radius: 10px;
+    height: 650px;
+    padding-top: 10px;
+}
+

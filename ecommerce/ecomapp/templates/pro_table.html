@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+</head>
+<body>
+    <center><h1 style="font-size: 50px; margin-bottom: 30px;">Manage Products</h1></center>
+    <table border="2" width="100%">
+        <tr>
+            <th>Product Id</th>
+            <th>Model Name</th>
+            <th>Brand</th>
+            <th>Price</th>
+            <th>Image</th>
+            <th>Update</th>
+            <th>Delete</th>
+        </tr>
+
+        {% for i in details %}
+        <tr>
+            <td>{{i.id}}</td>
+            <td>{{i.model}}</td>
+            <td>{{i.brand}}</td>
+            <td>{{i.rate}}</td>
+            <td><center><img src="/media/{{i.image}}" width="50px"></center></td>
+            <td></td>
+            <td></td>
+        </tr>
+        {% endfor %}
+    </table>
+    
+</body>
+</html>

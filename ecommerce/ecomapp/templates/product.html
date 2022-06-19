@@ -19,22 +19,22 @@
                     <h1>Register Mobile Phone</h1>
                     <div class="form-group">
                         <label for="exampleInputModel1">Model Name</label>
-                        <input type="text" onkeyup="modelvalid()" class="form-control" id="model" name="model" aria-describedby="modelHelp">
+                        <input type="text" onkeyup="modelvalid()" value="{{update.model}}" class="form-control" id="model" name="model" aria-describedby="modelHelp">
                         <label id="model_error"></label>
                     </div>
                     <div class="form-group">
                         <label for="exampleInputBrand1">Brand</label>
-                        <input type="text" onkeyup="brandvalid()" class="form-control" id="brand" name="brand" aria-describedby="brandHelp">
+                        <input type="text" onkeyup="brandvalid()" value="{{update.brand}}" class="form-control" id="brand" name="brand" aria-describedby="brandHelp">
                         <label id="brand_error"></label>
                     </div>
                     <div class="form-group">
                         <label for="exampleInputRate1">Rate</label>
-                        <input type="text" onkeyup="ratevalid()" class="form-control" id="rate" name="rate" aria-describedby="rateHelp">
+                        <input type="text" onkeyup="ratevalid()" value="{{update.rate}}" class="form-control" id="rate" name="rate" aria-describedby="rateHelp">
                         <label id="rate_error"></label>
                     </div>
                     <div class="form-group">
                         <label for="exampleInputFile1">Upload Image</label>
-                        <input type="file" class="form-control" id="image" name="image" aria-describedby="fileHelp">
+                        <input type="file" class="form-control" value="{{update.image}}" id="image" name="image" aria-describedby="fileHelp">
                         <label id="image_error"></label>
                     </div>
                     <button type="submit" class="btn btn-dark" onclick="return validation()">Register</button>

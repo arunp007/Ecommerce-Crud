@@ -16,3 +16,15 @@ class Product(models.Model):
 
     class Meta:
         db_table = 'mobileregistration'
+
+class User(models.Model):
+    name = models.TextField(max_length=100)
+    email = models.TextField(max_length=100)
+    contact = models.TextField(max_length=100)
+    username = models.TextField(max_length=100)
+    password = models.TextField(max_length=100)
+    cpassword = models.TextField(max_length=100)
+
+    class Meta:
+        db_table = 'userregistration'
+

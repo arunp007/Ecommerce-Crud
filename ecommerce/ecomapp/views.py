@@ -106,7 +106,7 @@ def userlogin(request):
         try:
             current_user = User.objects.get(username = username, password = password)
             request.session['xyz'] = current_user.id
-            return redirect('user')
+            return redirect('userhome')
 
         except User.DoesNotExist:
             return render(request, 'user_login.html', {'message': "Username And Password Is Wrong"})
